@@ -2,7 +2,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1b2430;
+    background: #4f154b;
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 
@@ -29,14 +29,14 @@ nav{
 }
 
 #navbar li a:hover{
-    color: #17cf97;
+    color: #c03db5;
 }
 
 #navbar li a:hover::after{
     content: "";
     width: 30%;
     height: 2px;
-    background: #17cf97;
+    background: #c03db5;
     position: absolute;
     bottom: -4px;
     left: 20px;

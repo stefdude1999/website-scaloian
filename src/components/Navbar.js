@@ -1,4 +1,7 @@
 import logo from '../assets/Stefan.png'
+import resume_button from '../assets/resume.png'
+import projects_button from '../assets/projects.png'
+import blog_button from '../assets/blog.png'
 import "./NavbarStyles.css"
 
 function Navbar() {
@@ -12,22 +15,17 @@ function Navbar() {
                 <ul id ="navbar">
                     <li>
                         <a href="index.html">
-                            Home
+                            <img src= {resume_button} />
                         </a>
                     </li>
                     <li>
                         <a href="index.html">
-                            Resume
+                            <img src= {projects_button}/>
                         </a>
                     </li>
                     <li>
                         <a href="index.html">
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            Blog
+                            <img src= {blog_button}/>
                         </a>
                     </li>
                 </ul>
