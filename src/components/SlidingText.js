@@ -31,7 +31,7 @@ const SlidingText = () => {
 
                     <div style={{textAlign:'right'}}>
                         <Slide direction="left" delay={5500}>
-                            <img src={stefan} alt="Stefan's Image" style={{ marginRight: '100px' }}/>
+                            <img src={stefan} alt="Stefan" style={{ marginRight: '100px' }}/>
                         </Slide>
                     </div>
                 </div>
