@@ -8,24 +8,24 @@ function Navbar() {
     return(
         <nav>
             <a href="index.html">
-                <img src={logo} />
+                <img src={logo} alt=""/>
             </a>
 
             <div>
                 <ul id ="navbar">
                     <li>
                         <a href="index.html">
-                            <img src= {resume_button} />
+                            <img src= {resume_button} alt=""/>
                         </a>
                     </li>
                     <li>
                         <a href="index.html">
-                            <img src= {projects_button}/>
+                            <img src= {projects_button} alt=""/>
                         </a>
                     </li>
                     <li>
                         <a href="index.html">
-                            <img src= {blog_button}/>
+                            <img src= {blog_button} alt=""/>
                         </a>
                     </li>
                 </ul>
