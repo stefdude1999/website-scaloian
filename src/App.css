@@ -23,3 +23,23 @@ body {
     background-position: 100% 0%;
   }
 }
+
+footer {
+  position: fixed;
+  background: linear-gradient(to right, rgb(81, 54, 7), rgb(120, 120, 120));
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  background: linear-gradient(to right, rgb(120, 120, 120), rgb(81, 54, 7));
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  text-align: center;
+}
