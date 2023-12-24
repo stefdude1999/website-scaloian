@@ -3,10 +3,16 @@ import { useState } from 'react';
 const FileExplorer = () => {
   const [currentDirectory, setCurrentDirectory] = useState('/home/user');
   const [fileContents] = useState({
-    '/home/user/file1.txt': 'Content of file1.txt',
-    '/home/user/file2.txt': 'Content of file2.txt',
-    '/home/user/folder1': {},
-    '/home/user/folder1/file3.txt': 'Content of file3.txt',
+    '/home/user/aboutme.txt': 'Hello! My name is Stefan Caloian. I graduated with a degree in computer engineering from the University of Waterloo in 2022. Throughout my co-op and fulltime career, I worked in all sorts of roles, ranging from full stack development, to working with artifical intelligence.',
+    '/home/user/contactme': {},
+    '/home/user/contactme/email.txt': 'stefc12341@outlook.com',
+    '/home/user/contactme/phone.txt': '519 504 7597',
+    '/home/user/contactme/linkedin.txt': 'linkedin.com/in/stefancaloian/',
+    '/home/user/contactme/github.txt': 'github.com/stefdude1999',
+    '/home/user/resume': {},
+    '/home/user/myskills': {},
+    '/home/user/resume/stefanresume.txt': 'my resume',
+    '/home/user/myskills/individualskills.txt': 'my skills',
   });
 
   const [parentDirectory, setParentDirectory] = useState(null);
