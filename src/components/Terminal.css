@@ -1,0 +1,94 @@
+body {
+    font-family: 'Courier New', Courier, monospace; /* Set the default font to a typewriter font */
+    font-size: 14px; /* Set the default font size */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .terminal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .terminal {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    padding: 0px;
+    background-color: black;
+  }
+
+  .terminal-header {
+    cursor: grab;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    user-select: none;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+  }
+  
+  
+  .traffic-light-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .traffic-light {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 4px; 
+    margin-bottom: 0px;
+  }
+  
+  .traffic-light.red {
+    background-color: #ff5f57; /* Red */
+  }
+  
+  .traffic-light.yellow {
+    background-color: #ffbd2e; /* Yellow */
+  }
+  
+  .traffic-light.green {
+    background-color: #28c940; /* Green */
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input span {
+    margin-right: 5px;
+    color: white;
+  }
+  
+  .input input {
+    border: none;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace; 
+    color: white;
+    background-color: transparent;
+    font-size: 14px; 
+  }
+  
+  .input,
+  .output {
+    text-align: left;
+    color: white;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 14px; 
+  }
+  
+  .input + .output {
+    margin-top: 5px;
+  }

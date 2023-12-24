@@ -1,18 +1,15 @@
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
-import SlidingText from "./components/SlidingText";
+import React from 'react';
+import Terminal from './components/Terminal';
 import './App.css';
-
-
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <div class="container">
-        <SlidingText/>
+      <div className="terminal-container">
+        <Terminal />
       </div>
-      <Footer />
+      </div>
     </div>
   );
 }
