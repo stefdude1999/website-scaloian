@@ -7,6 +7,7 @@ const Terminal = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState([]);
   const [isDragging, setIsDragging] = useState(false);
+  const [showIntro] = useState(true);
   const fileExplorer = FileExplorer();
   const terminalRef = useRef(null);
 
@@ -25,6 +26,8 @@ const Terminal = () => {
   const executeCommand = (command) => {
     const [cmd, ...args] = command.trim().split(' ');
     switch (cmd) {
+      case 'help':
+        return fileExplorer.help();
       case 'ls':
         return fileExplorer.ls();
       case 'pwd':
@@ -70,6 +73,13 @@ const Terminal = () => {
           </div>
           user@stefanswebsite - zsh
         </div>
+
+        {showIntro && (
+          <div className="output">
+            <div>I'm Stefan, Welcome to my website! You can drag this terminal around if you wish. Type help to begin to learn about me.</div>
+          </div>
+        )}
+
         {output.map((item, index) => (
           <div key={index} className={item.type}>
             {item.value}

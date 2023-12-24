@@ -92,8 +92,12 @@ const FileExplorer = () => {
   
     return entriesInCurrentDir.join(' ');
   };
+
+  const help = () => {
+    return 'This terminal supports pwd, cd, ls and cat commands. Look through the folder structure to meet me!';
+  };
   
-  return { currentDirectory, getCurrentDirectoryContents, changeDirectory, readFile, ls };
+  return { currentDirectory, getCurrentDirectoryContents, changeDirectory, readFile, ls, help };
 };
 
 export default FileExplorer;
