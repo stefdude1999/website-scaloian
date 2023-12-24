@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const FileExplorer = () => {
   const [currentDirectory, setCurrentDirectory] = useState('/home/user');
-  const [fileContents, setFileContents] = useState({
+  const [fileContents] = useState({
     '/home/user/file1.txt': 'Content of file1.txt',
     '/home/user/file2.txt': 'Content of file2.txt',
     '/home/user/folder1': {},
