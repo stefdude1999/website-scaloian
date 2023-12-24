@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #fff, #ffdefb, #ff98f3, #ff57db, #ff00d4);
+  background: linear-gradient(to right, #fff, #89a292, #3f7d5f, #146132, #007c34);
   background-size: 500% 100%; 
   animation: gradientShift 20s infinite linear alternate;
   margin: 0;

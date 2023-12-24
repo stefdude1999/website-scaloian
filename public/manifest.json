@@ -1,6 +1,6 @@
 {
-  "short_name": "Stefan",
-  "name": "Stefan's site",
+  "short_name": "Stefan Caloian",
+  "name": "Stefan Caloian's site",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "IMG_4908.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "IMG_4908.png",
       "type": "image/png",
       "sizes": "512x512"
     }

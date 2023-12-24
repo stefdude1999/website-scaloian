@@ -46,7 +46,11 @@ const Terminal = () => {
       const command = input.trim();
       setOutput([...output, { type: 'input', value: command }]);
       const commandOutput = executeCommand(command);
-      setOutput([...output, { type: 'output', value: `user@stefanswebsite ~ % ${command}` }, { type: 'output', value: commandOutput }]);
+      setOutput([
+        ...output,
+        { type: 'output', value: `user@stefanswebsite ~ % ${command}` },
+        { type: 'output', value: commandOutput },
+      ]);
       setInput('');
     }
   };
@@ -76,14 +80,18 @@ const Terminal = () => {
 
         {showIntro && (
           <div className="output">
-            <div>I'm Stefan, Welcome to my website! You can drag this terminal around if you wish. Type help to begin to learn about me.</div>
+            <div>
+              I'm Stefan, Welcome to my website! You can drag this terminal around if you wish. Type help to begin to learn about me.
+            </div>
           </div>
         )}
 
         {output.map((item, index) => (
-          <div key={index} className={item.type}>
-            {item.value}
-          </div>
+          <div
+            key={index}
+            className={item.type}
+            dangerouslySetInnerHTML={item.type === 'output' ? { __html: item.value } : null}
+          />
         ))}
         <div className="input">
           <span>user@stefanswebsite ~ %</span>

@@ -7,13 +7,15 @@ const FileExplorer = () => {
     '/home/user/contactme': {},
     '/home/user/contactme/email.txt': 'stefc12341@outlook.com',
     '/home/user/contactme/phone.txt': '519 504 7597',
-    '/home/user/contactme/linkedin.txt': 'linkedin.com/in/stefancaloian/',
-    '/home/user/contactme/github.txt': 'github.com/stefdude1999',
+    '/home/user/contactme/linkedin.txt': '<a href="https://www.linkedin.com/in/stefancaloian/" target="_blank">linkedin.com/in/stefancaloian/</a>',
+    '/home/user/contactme/github.txt': '<a href="https://github.com/stefdude1999" target="_blank">github.com/stefdude1999</a>',
     '/home/user/resume': {},
     '/home/user/myskills': {},
-    '/home/user/resume/stefanresume.txt': 'my resume',
-    '/home/user/myskills/individualskills.txt': 'my skills',
+    '/home/user/resume/stefanresume.txt': '<a href="https://drive.google.com/file/d/1PX0XXilUk6X7mGJmjomr_nWY0X3PQ2JG/view?usp=sharing" target="_blank">Resume</a>',
+    '/home/user/myskills/proficientskills.txt': 'C++, C, C#, React, Rust, Java, Python, SQL',
+    '/home/user/myskills/developingskills.txt': 'Go, Spring Boot, Ruby',
   });
+
 
   const [parentDirectory, setParentDirectory] = useState(null);
 
