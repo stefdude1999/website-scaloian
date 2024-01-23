@@ -11,7 +11,7 @@ const FileExplorer = () => {
     '/home/user/contactme/github.txt': '<a href="https://github.com/stefdude1999" target="_blank">github.com/stefdude1999</a>',
     '/home/user/resume': {},
     '/home/user/myskills': {},
-    '/home/user/resume/stefanresume.txt': '<a href="https://drive.google.com/file/d/1PX0XXilUk6X7mGJmjomr_nWY0X3PQ2JG/view?usp=sharing" target="_blank">Resume</a>',
+    '/home/user/resume/stefanresume.txt': '<a href="https://drive.google.com/file/d/1kf85nJBLV8fI9n9ESAnWammhzDl5W84Y/view?usp=sharing" target="_blank">Resume</a>',
     '/home/user/myskills/proficientskills.txt': 'C++, C, C#, React, Rust, Java, Python, SQL',
     '/home/user/myskills/developingskills.txt': 'Go, Spring Boot, Ruby',
   });
